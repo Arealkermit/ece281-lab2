@@ -34,7 +34,7 @@ entity sevenseg_decoder_tb is
 end sevenseg_decoder_tb;
 
 architecture Behavioral of sevenseg_decoder_tb is
-    signal hex   : std_logic_vector(3 downto 0) := (others => '0');
+    signal hex   : std_logic_vector(3 downto 0);
     signal seg_n : std_logic_vector(6 downto 0);
 begin
     uut:entity work.sevenseg_decoder

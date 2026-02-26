@@ -50,13 +50,13 @@ begin
         "0100000" when x"6", --6
         "0001111" when x"7", --7
         "0000000" when x"8", --8
-        "0000100" when x"9", --9
+        "0001100" when x"9", --9
         "0001000" when x"A", --A
         "1100000" when x"B", --b
         "0110001" when x"C", --C
         "1000010" when x"D", --d
         "0110000" when x"E", --E
         "0111000" when x"F", --F
-        "1111111" when others; --off
+        "1111111" when others;
     o_seg_n <= s_abcdefg_n;
 end Behavioral;
