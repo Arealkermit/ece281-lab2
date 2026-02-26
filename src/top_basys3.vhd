@@ -106,7 +106,9 @@ begin
 	-- wire up active-low 7SD anode (active low) to button (active-high)
 	-- display 7SD 0 only when button pushed
 	-- other 7SD are kept off
-	seg <= w_seg_n;
+	seg <= w_seg_n(0) & w_seg_n(1) & w_seg_n(2) & w_seg_n(3) &
+       w_seg_n(4) & w_seg_n(5) & w_seg_n(6)
+       when btnC='1' else (others => '1');
 	-----------------------------------------------------
 	
 end top_basys3_arch;
